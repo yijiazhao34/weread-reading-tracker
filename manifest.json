@@ -1,0 +1,9 @@
+{
+  "id": "weread-reading-tracker",
+  "name": "微信读书阅读追踪",
+  "version": "1.1.0",
+  "minAppVersion": "1.11.4",
+  "description": "导入微信读书目录，记录章节完成时间和每日阅读时长。",
+  "author": "Codex",
+  "isDesktopOnly": true
+}

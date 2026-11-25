@@ -1,0 +1,143 @@
+.wrt-panel {
+  margin-block: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+}
+
+.wrt-summary,
+.wrt-controls,
+.wrt-remote {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem .9rem;
+}
+
+.wrt-summary {
+  margin-bottom: .8rem;
+  font-weight: var(--font-medium);
+}
+
+.wrt-bibliography {
+  margin-bottom: .8rem;
+}
+
+.wrt-bibliography p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.wrt-remote {
+  border-top: 1px solid var(--background-modifier-border);
+  margin-top: .9rem;
+  padding-top: .75rem;
+}
+
+.wrt-remote p {
+  margin: 0;
+}
+
+.wrt-section-heading {
+  justify-content: space-between;
+  margin: 1rem 0 .35rem;
+}
+
+.wrt-section-heading h3 {
+  margin: 0;
+}
+
+.wrt-chapter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .3rem .55rem;
+  padding: .35rem .3rem;
+  margin-inline-start: min(calc(var(--wrt-depth) * 1.1rem), 25%);
+  border-radius: var(--radius-s);
+  cursor: pointer;
+}
+
+.wrt-chapter:hover {
+  background: var(--background-modifier-hover);
+}
+
+.wrt-panel .wrt-chapter input[type="checkbox"] {
+  cursor: pointer;
+  margin: 0;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.wrt-chapter-title {
+  flex: 1 1 12rem;
+  overflow-wrap: anywhere;
+}
+
+.wrt-stamp,
+.wrt-clock {
+  font-variant-numeric: tabular-nums;
+}
+
+.wrt-muted,
+.wrt-stamp,
+.wrt-remote p {
+  color: var(--text-muted);
+  font-size: var(--font-small);
+}
+
+.wrt-log {
+  margin-top: 1rem;
+  border-top: 1px solid var(--background-modifier-border);
+  padding-top: .75rem;
+}
+
+.wrt-log summary {
+  cursor: pointer;
+  font-weight: var(--font-medium);
+}
+
+.wrt-log table {
+  margin-block: .5rem 0;
+}
+
+.wrt-book-list {
+  display: grid;
+  gap: .35rem;
+  max-height: 45vh;
+  overflow: auto;
+}
+
+.wrt-book-choice {
+  justify-content: space-between;
+  gap: .5rem;
+  height: auto;
+  padding: .5rem .75rem;
+  white-space: normal;
+  text-align: start;
+}
+
+.wrt-book-choice span:first-child,
+.wrt-book-choice .wrt-muted {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.wrt-form,
+.wrt-form label {
+  display: grid;
+  gap: .5rem;
+}
+
+.wrt-form {
+  gap: .9rem;
+}
+
+.wrt-form button {
+  justify-self: start;
+}
+
+.wrt-controls [hidden],
+.wrt-chapters [hidden] {
+  display: none !important;
+}
